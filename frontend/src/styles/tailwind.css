@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* scroll snap helper */
+.scroll-snap-x {
+  scroll-snap-type: x mandatory;
+}
+.scroll-snap-center {
+  scroll-snap-align: center;
+}
+/* hide scrollbar for aesthetics */
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

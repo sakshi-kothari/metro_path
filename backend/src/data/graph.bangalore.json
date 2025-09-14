@@ -1,0 +1,194 @@
+{
+  "stations": {
+    "BYPL": {
+      "name": "Baiyappanahalli",
+      "line": "Purple"
+    },
+    "INDR": {
+      "name": "Indiranagar",
+      "line": "Purple"
+    },
+    "HALS": {
+      "name": "Halasuru (Ulsoor)",
+      "line": "Purple"
+    },
+    "TRIN": {
+      "name": "Trinity",
+      "line": "Purple"
+    },
+    "MGRO": {
+      "name": "M.G. Road",
+      "line": "Purple"
+    },
+    "CBPK": {
+      "name": "Cubbon Park",
+      "line": "Purple"
+    },
+    "VIDH": {
+      "name": "Vidhana Soudha",
+      "line": "Purple"
+    },
+    "SIRV": {
+      "name": "Sir M. Visvesvaraya",
+      "line": "Purple"
+    },
+    "MJSK": {
+      "name": "Nadaprabhu Kempegowda (Majestic)",
+      "line": "Purple/Green"
+    },
+    "SAMP": {
+      "name": "Sampige Road (Mantri Square)",
+      "line": "Green"
+    },
+    "KUVM": {
+      "name": "Kuvempu Road",
+      "line": "Green"
+    },
+    "RAJI": {
+      "name": "Rajajinagar",
+      "line": "Green"
+    },
+    "SBMN": {
+      "name": "Sandal Soap Factory",
+      "line": "Green"
+    },
+    "YESH": {
+      "name": "Yeshwanthpur",
+      "line": "Green"
+    }
+  },
+  "edges": {
+    "BYPL": [
+      {
+        "to": "INDR",
+        "time": 3
+      }
+    ],
+    "INDR": [
+      {
+        "to": "BYPL",
+        "time": 3
+      },
+      {
+        "to": "HALS",
+        "time": 3
+      }
+    ],
+    "HALS": [
+      {
+        "to": "INDR",
+        "time": 3
+      },
+      {
+        "to": "TRIN",
+        "time": 2
+      }
+    ],
+    "TRIN": [
+      {
+        "to": "HALS",
+        "time": 2
+      },
+      {
+        "to": "MGRO",
+        "time": 2
+      }
+    ],
+    "MGRO": [
+      {
+        "to": "TRIN",
+        "time": 2
+      },
+      {
+        "to": "CBPK",
+        "time": 3
+      }
+    ],
+    "CBPK": [
+      {
+        "to": "MGRO",
+        "time": 3
+      },
+      {
+        "to": "VIDH",
+        "time": 2
+      }
+    ],
+    "VIDH": [
+      {
+        "to": "CBPK",
+        "time": 2
+      },
+      {
+        "to": "SIRV",
+        "time": 2
+      }
+    ],
+    "SIRV": [
+      {
+        "to": "VIDH",
+        "time": 2
+      },
+      {
+        "to": "MJSK",
+        "time": 3
+      }
+    ],
+    "MJSK": [
+      {
+        "to": "SIRV",
+        "time": 3
+      },
+      {
+        "to": "SAMP",
+        "time": 2
+      }
+    ],
+    "SAMP": [
+      {
+        "to": "MJSK",
+        "time": 2
+      },
+      {
+        "to": "KUVM",
+        "time": 3
+      }
+    ],
+    "KUVM": [
+      {
+        "to": "SAMP",
+        "time": 3
+      },
+      {
+        "to": "RAJI",
+        "time": 2
+      }
+    ],
+    "RAJI": [
+      {
+        "to": "KUVM",
+        "time": 2
+      },
+      {
+        "to": "SBMN",
+        "time": 2
+      }
+    ],
+    "SBMN": [
+      {
+        "to": "RAJI",
+        "time": 2
+      },
+      {
+        "to": "YESH",
+        "time": 3
+      }
+    ],
+    "YESH": [
+      {
+        "to": "SBMN",
+        "time": 3
+      }
+    ]
+  }
+}
